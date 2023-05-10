@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/App.css'
+import { Input } from './components/Input/Input'
+import { Title } from "./components/Title/Title";
+import { Button } from "./components/Button/Button"
+import { Logo } from "./components/Logo/Logo"
+
+import img from "./assets/logo-pets.png"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
+
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Logo width='118px' height='117px' logo={img}></Logo>
+      <Title font='20px' content='ProtegePet' margin='18px'></Title>
+      <Title content="Login"></Title>
+      <Input title='Email'></Input>
+      <Input title='Senha'></Input>
+      <Button position='157px' content='Entrar'></Button>
+      <Title margin={"40px"} content='Ainda não tenho conta:'></Title>
+      <Button position='90px' content='Cadastrar como Protetora'></Button>
+      <Button position='84px' content='Cadastrar como Fornecedor'></Button>
     </>
+
   )
+
 }
 
 export default App
