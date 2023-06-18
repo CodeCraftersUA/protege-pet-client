@@ -1,18 +1,12 @@
-import { Header } from "./components/Header"
-import { Carousel } from "./components/Carousel"
-import { Content } from "./components/Content"
-import { Footer } from "./components/Footer"
+import LandingPage from "./Pages/LandingPage";
 
 function App(): JSX.Element {
 
   return (
     <>
-      <Header />
-      <Carousel />
-      <Content />
-      <Footer />
+      <LandingPage/>
     </>
   )
 }
 
-export default App
+export default App;
