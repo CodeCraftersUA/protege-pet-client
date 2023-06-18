@@ -1,10 +1,11 @@
 import styles from "./index.module.css"
 import background from "../../assets/icones-bakground.svg"
-import cao_amarelo from "../../assets/cao1.png"
 import logo from "../../assets/pets 1.svg"
+
+import cao_amarelo from "../../assets/cao1.png"
 import { Link } from "react-router-dom"
 
-const Login = () => {
+const CommonUserRegister = () => {
     return (
         <>
 
@@ -14,19 +15,25 @@ const Login = () => {
 
                 <img src={logo} alt="" />
                 <h2>Protege Pet</h2>
-                <h1>Login</h1>
+                <h3>Cadastro Associado</h3>
 
                 <form action="" className={styles.form_container}>
+                    <input className={styles.input} type="text" placeholder="nome"/>
                     <input className={styles.input} type="text" placeholder="email"/>
+                    <input className={styles.input} type="text" placeholder="celular"/>
+                    <input className={styles.input} type="text" placeholder="cpf/cnpj"/>
                     <input className={styles.input} type="text" placeholder="senha"/>
+                    
 
                     <button className={styles.login_btn}>
-                        Entrar
+                        Finalizar
                     </button>
 
                     <footer className={styles.form_footer}>
-                        
                     <Link to="/register_users">Registre-se</Link>
+                    
+                    
+                    <Link to="/login">Voltar</Link>
                     
                     </footer>
                     
@@ -45,4 +52,4 @@ const Login = () => {
     )
 }
 
-export default Login;
+export default CommonUserRegister;
