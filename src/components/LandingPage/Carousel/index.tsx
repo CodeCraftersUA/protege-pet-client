@@ -1,4 +1,4 @@
-import mainImage from '../../assets/main-image.svg'
+import mainImage from '../../../assets/main-image.svg'
 import styles from './index.module.css'
 // import { motion } from 'framer-motion'
 // import image1 from '../../assets/main-image.svg'

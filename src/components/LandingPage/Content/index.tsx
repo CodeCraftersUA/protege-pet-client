@@ -1,12 +1,13 @@
 import styles from './index.module.css'
-import bg1 from '../../assets/back_ground_1.svg'
-import bg2 from '../../assets/back_ground_2.svg'
-import bg3 from '../../assets/back_ground_3.svg'
-import husky from '../../assets/Rectangle 12.svg'
-import catdog from '../../assets/Rectangle 11.svg'
-import center from '../../assets/center.svg'
-import left from '../../assets/left.svg'
-import right from '../../assets/right.svg'
+
+import bg1 from '../../../assets/back_ground_1.svg'
+import bg2 from '../../../assets/back_ground_2.svg'
+import bg3 from '../../../assets/back_ground_3.svg'
+import husky from '../../../assets/Rectangle 12.svg'
+import catdog from '../../../assets/Rectangle 11.svg'
+import center from '../../../assets/center.svg'
+import left from '../../../assets/left.svg'
+import right from '../../../assets/right.svg'
 
 
 export const Content = () => {

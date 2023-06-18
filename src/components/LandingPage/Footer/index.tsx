@@ -1,5 +1,5 @@
 import styles from './index.module.css'
-import footer_image from '../../assets/footer-image.svg'
+import footer_image from '../../../assets/footer-image.svg'
 
 export const Footer = () => {
     return (
