@@ -33,8 +33,8 @@ const UserList = (props: Props) => {
                                 <td>{`${user.estado}`}</td>
                                 <td>
                                     <div>
-                                        <span><input className="button-success" type="button" value="Aprovar" /> </span>
-                                        <span><input className="button-error" type="button" value="Reprovar" /> </span>
+                                        <button className="button button1">Aprovar</button>
+                                        <button className="button button2">Reprovar</button>                                        
                                     </div>
                                 </td>
                             </tr>
