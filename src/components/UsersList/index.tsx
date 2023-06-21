@@ -1,4 +1,4 @@
-import { IUser } from "./UserList";
+import { IUser } from "./User";
 import "./UserList.style.css"
 
 type Props = {
