@@ -5,49 +5,76 @@ import logo from "../../assets/pets 1.svg"
 import gato from "../../assets/gato.png"
 import { Link } from "react-router-dom"
 
+import { useForm, SubmitHandler } from "react-hook-form";
+import { api } from "../../config/api"
+
+type Inputs = {
+    name: string,
+    email: string,
+    celphone: string,
+    cnpj: string,
+    password: string,
+    type: string
+};
+
 const ProtectorRegister = () => {
+
+    const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
+
+    const onSubmit: SubmitHandler<Inputs> = data => api.post('http://localhost:3000/account', data)
+    .then(() => {
+        console.log("Deu Certo")
+    })
+    .catch(() => {
+        console.log("Deu Errado")
+    }) 
+
     return (
         <>
+            <main className={styles.main_container} style={{ backgroundImage: `url(${background})` }}>
 
-        <main className={styles.main_container} style={{ backgroundImage: `url(${background})` }}>
+                <section className={styles.section_container}>
 
-            <section className={styles.section_container}>
+                    <img src={logo} alt="" />
+                    <h2>Protege Pet</h2>
+                    <h3>Cadastro Associado</h3>
 
-                <img src={logo} alt="" />
-                <h2>Protege Pet</h2>
-                <h3>Cadastro Protetora</h3>
+                    <form onSubmit={handleSubmit(onSubmit)} className={styles.form_container}>
+                        
+                        <input {...register("name", { required: true })} className={styles.input} type="text" placeholder="nome" />
+                        {errors.name && <span>This field is required</span>}
 
-                <form action="" className={styles.form_container}>
-                    <input className={styles.input} type="text" placeholder="nome"/>
-                    <input className={styles.input} type="text" placeholder="email"/>
-                    <input className={styles.input} type="text" placeholder="celular"/>
-                    <input className={styles.input} type="text" placeholder="cpf/cnpj"/>
-                    <input className={styles.input} type="text" placeholder="senha"/>
+                        <input {...register("email", { required: true })} className={styles.input} type="text" placeholder="email" />
+                        {errors.email && <span>This field is required</span>}
+
+                        
+                        <input {...register("cnpj")} className={styles.input} type="text" placeholder="cnpj" />
                     
+                        <input {...register("password", { required: true })} className={styles.input} type="text" placeholder="senha" />
+                        {errors.password && <p>This field is required</p>}
 
-                    <button className={styles.login_btn}>
-                        Finalizar
-                    </button>
+                        <input {...register("type", { required: true })} className={styles.input} type="text" placeholder="typeof" />
+                        {errors.password && <p>This field is required</p>}
+                        
+                        <button type="submit" className={styles.login_btn}>
+                            Finalizar
+                        </button>
 
-                    <footer className={styles.form_footer}>
-                    <Link to="/register_users">Registre-se</Link>
-                    
-                    
-                    <Link to="/login">Voltar</Link>
-                    
-                    </footer>
-                    
-                </form>
+                        <footer className={styles.form_footer}>
+                            <Link to="/register_users">Registre-se</Link>
+                            <Link to="/login">Voltar</Link>
+                        </footer>
 
-                
-            </section>
+                    </form>
 
-            <section className={styles.img_container}>
-                <img className={styles.img} src={gato} alt="" />
-            </section>
+                </section>
 
-        </main>
-        
+                <section className={styles.img_container}>
+                    <img className={styles.img} src={gato} alt="" />
+                </section>
+
+            </main>
+
         </>
     )
 }
