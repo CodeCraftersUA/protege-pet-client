@@ -1,4 +1,5 @@
-import { IUser } from "./User";
+import { IUser, dummyUserList } from "./User";
+import { useState } from "react";
 import "./UserList.style.css"
 
 type Props = {
@@ -7,10 +8,15 @@ type Props = {
 
 const UserList = (props: Props) => {
     const {list} = props;
+    const [userList, setUserList] = useState(dummyUserList as IUser[]);
 
     return (
         <>
-            <div>User List Page
+            <header>
+                <h2>Usuários</h2>
+            </header>
+
+            <article>
                 <table>
                     <tr>
                         <th>ID</th>
@@ -41,7 +47,7 @@ const UserList = (props: Props) => {
                         );
                     })}
                 </table>
-            </div>
+            </article>
         </>
     );
 };
