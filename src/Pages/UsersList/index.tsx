@@ -1,6 +1,6 @@
-import UserList from "../../components/UsersList";
+import UsersList from "../../components/UsersList";
 
-const UsersList = () => {
+const UsersListPage = () => {
     return (
         <>
            <UsersList />
@@ -8,4 +8,4 @@ const UsersList = () => {
     );
 };
 
-export default UsersList;
+export default UsersListPage;
