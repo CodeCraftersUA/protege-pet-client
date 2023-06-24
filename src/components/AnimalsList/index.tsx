@@ -16,7 +16,7 @@ const AnimalsList = /*(props: Props)*/() => {
     return (
         <>
             <header>
-                <h2>Usuários</h2>
+                <h2>Animais</h2>
             </header>
 
             <div className="container-fluid">

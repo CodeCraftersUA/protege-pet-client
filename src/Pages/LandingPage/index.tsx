@@ -12,7 +12,6 @@ const LandingPage = () => {
             <Carousel />
             <Content />
             <Footer />
-            <AnimalsList />
         </>
     )
 }
