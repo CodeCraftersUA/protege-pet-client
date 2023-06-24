@@ -11,6 +11,7 @@ import ProtectorRegisterPage from './Pages/ProtectorRegister/index.tsx'
 import SupplierRegisterPage from './Pages/SupplierRegister/index.tsx'
 import UsersRegisterPage from './Pages/UsersRegister/index.tsx'
 import CommonUserRegisterPage from './Pages/CommonUserRegister/index.tsx'
+import AdmRegisterPage from './Pages/AdmRegister/index.tsx'
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/register_common_user",
     element: <CommonUserRegisterPage/>
+  },
+  {
+    path: "/register_adm",
+    element: <AdmRegisterPage/>
   }
 ])
 
