@@ -44,7 +44,7 @@ const UsersList = /*(props: Props)*/() => {
                                     <td>
                                         
                                             <button className="btn btn-outline-success btn-sm">Aprovar</button>
-                                            <span> </span>
+                                            <span></span>
                                             <button className="btn btn-outline-danger btn-sm">Reprovar</button>
                                         
                                     </td>
@@ -59,7 +59,7 @@ const UsersList = /*(props: Props)*/() => {
                                     <td>
                                         
                                             <button className="btn btn-outline-success btn-sm">Aprovar</button>
-                                            <span> </span>
+                                            <span></span>
                                             <button className="btn btn-outline-danger btn-sm">Reprovar</button>
                                         
                                     </td>

@@ -3,6 +3,7 @@ import { Header } from "../../components/LandingPage/Header";
 import { Carousel } from "../../components/LandingPage/Carousel";
 import { Content } from "../../components/LandingPage/Content";
 import UsersList from "../UsersList";
+import AnimalsList from "../../components/AnimalsList";
 
 const LandingPage = () => {
     return (
@@ -11,7 +12,7 @@ const LandingPage = () => {
             <Carousel />
             <Content />
             <Footer />
-            <UsersList />
+            <AnimalsList />
         </>
     )
 }
