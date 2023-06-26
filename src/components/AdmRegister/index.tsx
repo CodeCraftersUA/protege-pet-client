@@ -2,7 +2,6 @@ import styles from "./index.module.css"
 import background from "../../assets/icones-bakground.svg"
 import logo from "../../assets/pets 1.svg"
 
-import gato from "../../assets/gato.png"
 import { Link } from "react-router-dom"
 
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -17,7 +16,7 @@ type Inputs = {
     type: string
 };
 
-const ProtectorRegister = () => {
+const AdmRegister = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
 
@@ -37,7 +36,7 @@ const ProtectorRegister = () => {
 
                     <img src={logo} alt="" />
                     <h2>Protege Pet</h2>
-                    <h3>Cadastro Associado</h3>
+                    <h3>Acesso do Administrador</h3>
 
                     <form onSubmit={handleSubmit(onSubmit)} className={styles.form_container}>
                         
@@ -61,16 +60,11 @@ const ProtectorRegister = () => {
                         </button>
 
                         <footer className={styles.form_footer}>
-                            <Link to="/register_users">Registre-se</Link>
-                            <Link to="/login">Voltar</Link>
+                            <Link to="/login">Entrar</Link>
                         </footer>
 
                     </form>
 
-                </section>
-
-                <section className={styles.img_container}>
-                    <img className={styles.img} src={gato} alt="" />
                 </section>
 
             </main>
@@ -79,4 +73,4 @@ const ProtectorRegister = () => {
     )
 }
 
-export default ProtectorRegister;
+export default AdmRegister;
