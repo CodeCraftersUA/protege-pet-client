@@ -3,6 +3,8 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "./Content.styles.css";
 import Dog from "../../../assets/dog-content.png";
 import Card from "../Card/Card";
+import MapFrame from "../MapFrame/MapFrame";
+import Partner from "../Partner/Partner";
 
 const Content = () => {
 
@@ -24,6 +26,9 @@ const Content = () => {
                 <hr className="mb-0 mt-0" />
                 <Card />
             </section>
+            <Partner />
+
+            <MapFrame />
         </>
     );
 };

@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./Card.styles.css";
-import BannerCat from "../../../assets/cat_pet.jpg";
+import BannerAdote from "../../../assets/adote_pet.jpg";
 import BannerDog from "../../../assets/dog_content.jpg";
 import BannerDogFunny from "../../../assets/dog_banner_rounded.jpg";
 
@@ -14,8 +14,8 @@ const Card = () => {
                     Como você pode nos ajudar?
                 </p>
                 <div className="card-group shadow-lg">
-                    <div className="card cardSize border border-warning">
-                        <img src={BannerCat} className="card-img-top cardImageSize" alt="Cadastre-se" />
+                    <div className="card border border-warning cardSize">
+                        <img src={BannerAdote} className="card-img-top zoom" alt="Cadastre-se" />
                         <div className="card-body shadow-lg">
                             <h5 className="card-title text-center">ADOTE</h5>
                             <p className="card-text">
@@ -23,8 +23,8 @@ const Card = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="card cardSize border-top border-bottom border-warning">
-                        <img src={BannerDogFunny} className="card-img-top " alt="Palm Springs Road" />
+                    <div className="card border-top border-bottom border-warning cardSize">
+                        <img src={BannerDogFunny} className="card-img-top zoom" alt="Palm Springs Road" />
                         <div className="card-body shadow-lg">
                             <h5 className="card-title text-center">SEJA UM ASSOCIADO</h5>
                             <p className="card-text">
@@ -32,8 +32,8 @@ const Card = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="card cardSize border-top border-bottom border-warning">
-                        <img src={BannerDog} className="card-img-top " alt="Palm Springs Road" />
+                    <div className="card border-top border-bottom border-warning cardSize">
+                        <img src={BannerDog} className="card-img-top zoom" alt="Palm Springs Road" />
                         <div className="card-body shadow-lg">
                             <h5 className="card-title text-center">PROTEJA</h5>
                             <p className="card-text">
@@ -44,7 +44,7 @@ const Card = () => {
                     </div>
                 </div>
             </div>
-            <hr className="mb-0 mt-0" />
+            <hr className="mb-0 mt-5 pt-5" />
         </>
     );
 };
