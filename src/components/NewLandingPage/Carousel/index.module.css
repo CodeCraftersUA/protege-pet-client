@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+.carouselHome {
+    height: 33.9%;
+    background-color: #ffc70f70;
+    background-image: url("../../../assets/paws.png");
+    /*opacity: 0.8;*/
+}
+
+.carouselSize {
+    max-width: 1920px;
+    object-fit: cover;
+}
+
+.zoom {
+    transition: .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.06);
+    text-shadow: .9px .9px #a18117;
+}

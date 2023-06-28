@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+nav {
+    background-color: #FFC60F;
+}
+
+ul.header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    font-weight: 399;
+    margin: auto;
+    padding-right: 19px;
+    text-transform: uppercase;
+}
+
+nav li {
+    margin: auto 9px auto 9px;
+}
+
+.zoom {
+    transition: .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.06);
+    text-shadow: .9px .9px #a18117;
+}
