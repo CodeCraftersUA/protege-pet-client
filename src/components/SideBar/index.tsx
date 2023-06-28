@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+
 import  "./index.module.css";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
     return (
@@ -17,9 +19,9 @@ const SideBar = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link align-middle px-0">
+                            <Link to="/animals_list" className="nav-link align-middle px-0">
                                 <i className="bi bi-home"></i><span className="ms-1 d-none d-sm-inline text-white">Animais</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a href="#submenu1" data-bs-toggle="collapse" className="nav-link px-0 align-middle">
@@ -29,7 +31,7 @@ const SideBar = () => {
                                     <a href="#" className="nav-link px-4"> <span className="d-none d-sm-inline text-white">Associados</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" className="nav-link px-4"> <span className="d-none d-sm-inline text-white">Protetores</span></a>
+                                    <Link to="/users_list" className="nav-link px-4"> <span className="d-none d-sm-inline text-white">Protetores</span></Link>
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link px-4"> <span className="d-none d-sm-inline text-white">Fornecedores</span></a>
