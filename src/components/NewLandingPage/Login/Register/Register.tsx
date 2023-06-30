@@ -1,9 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./Register.styles.css";
-import PetLogo from "../../../assets/pet_logo.svg";
 import Header from "../../Home/Header/Header";
-import Footer from "./../Footer/Footer";
+import Footer from "../Footer/Footer";
 
 const Register = () => {
 
