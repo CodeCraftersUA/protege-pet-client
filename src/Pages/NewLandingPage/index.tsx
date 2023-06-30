@@ -4,7 +4,7 @@ import ProtectorList from "../../components/NewLandingPage/ProtectorList/Protect
 const NewLandingPage = () => {
     return (
         <>
-           <ProtectorList />
+           <Home />
         </>
     );
 };
