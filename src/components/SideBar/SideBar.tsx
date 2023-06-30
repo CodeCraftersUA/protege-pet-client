@@ -36,7 +36,7 @@ const SideBar = () => {
                                     <Link to="/protectors"><a href="" className="nav-link px-4"> <p className="d-none d-sm-inline text-white">Protetores</p></a></Link>
                                 </li>
                                 <li className="zoom">
-                                    <Link to="/suppliers"><a className="nav-link  px-4"> <p className="d-none d-sm-inline text-white">Fornecedores</p></a></Link>
+                                    <Link to="/suppliers"><a className="nav-link  px-4"> <p className="d-none d-sm-inline text-white">Parceiros</p></a></Link>
                                 </li>
                             </ul>
                         </li>

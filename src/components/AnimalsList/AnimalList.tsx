@@ -45,6 +45,7 @@ const AnimalList = () => {
                                     <th>Espécie</th>
                                     <th>Gênero</th>
                                     <th>Doença</th>
+                                    <th>Protetor</th>
                                     <th>Ação</th>
                                 </tr>
                                 <tr>
@@ -53,6 +54,7 @@ const AnimalList = () => {
                                     <td>Pastor Alemão</td>
                                     <td>Macho</td>
                                     <td>Eplepsia</td>
+                                    <td>Maria</td>
                                     <td>
                                         <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
                                         <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>
@@ -64,6 +66,7 @@ const AnimalList = () => {
                                     <td>Vira Lata</td>
                                     <td>Macho</td>
                                     <td>Insonia</td>
+                                    <td>João</td>
                                     <td>
                                         <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
                                         <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>
