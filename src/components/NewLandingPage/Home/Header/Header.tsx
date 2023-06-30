@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./Header.styles.css";
-import PetLogo from "../../../../assets/pet_logo.svg";
+import PetLogo from "../../../assets/pet_logo.svg";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
             <header className="justify-content-center">
                 <nav className="navbar fixed-top navbar-expand-lg">
                     <div className="container-md">
-                        <a className="navbar-brand" href="#">
+                        <a className="navbar-brand">
                             <img src={PetLogo} alt="Logo" width="39" height="39" className="d-inline-block align-text-top" />
                             AnimalSave
                         </a>
@@ -36,7 +36,10 @@ const Header = () => {
                                     <a className="nav-link">Blog</a>
                                 </li>
                                 <li className="nav-item zoom">
-                                    <Link to="/login"><a className="nav-link btn btn-outline rounded-1 border border-1 px-2 active">Entrar</a></Link>
+                                    <Link to={"/login"}><a className="nav-link btn btn-outline rounded-1 border border-1 px-2 active">Entrar</a></Link>
+                                </li>
+                                <li className="nav-item zoom">
+                                    <Link to="/register"><a className="nav-link">Cadastrar</a></Link>
                                 </li>
                             </ul>
                         </div>

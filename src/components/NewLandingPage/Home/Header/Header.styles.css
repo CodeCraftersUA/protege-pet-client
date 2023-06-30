@@ -17,6 +17,10 @@ nav li {
     margin: auto 9px auto 9px;
 }
 
+nav li a {
+    text-decoration: none;
+}
+
 .zoom {
     transition: .2s;
 }

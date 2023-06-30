@@ -2,8 +2,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
 import  "./SideBar.styles.css";
-import PetLogo from "../../../assets/pet_logo.svg";
-import Vader from "../../../assets/vader.jpg";
+import PetLogo from "../../assets/pet_logo.svg";
+import Vader from "../../assets/vader.jpg";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
     return (
@@ -29,13 +30,13 @@ const SideBar = () => {
                                 <i className="fs-4 bi-speedometer2"></i> <p className="ms-1 d-none d-sm-inline text-white dropdown-toggle">Usuários</p></a>
                             <ul className="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                 <li className="w-100 zoom">
-                                    <a href="#" className="nav-link px-4"> <p className="d-none d-sm-inline text-white">Associados</p></a>
+                                    <Link to="/associates"><a href="#" className="nav-link px-4"> <p className="d-none d-sm-inline text-white">Associados</p></a></Link>
                                 </li>
                                 <li className="zoom">
-                                    <a href="" className="nav-link px-4"> <p className="d-none d-sm-inline text-white">Protetores</p></a>
+                                    <Link to="/protectors"><a href="" className="nav-link px-4"> <p className="d-none d-sm-inline text-white">Protetores</p></a></Link>
                                 </li>
                                 <li className="zoom">
-                                    <a href="#" className="nav-link px-4"> <p className="d-none d-sm-inline text-white">Fornecedores</p></a>
+                                    <Link to="/suppliers"><a className="nav-link  px-4"> <p className="d-none d-sm-inline text-white">Fornecedores</p></a></Link>
                                 </li>
                             </ul>
                         </li>

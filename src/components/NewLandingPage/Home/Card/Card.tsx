@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./Card.styles.css";
-import BannerAdote from "../../../../assets/adote_pet.jpg";
-import BannerDog from "../../../../assets/dog_content.jpg";
-import BannerDogFunny from "../../../../assets/dog_banner_rounded.jpg";
+import BannerAdote from "../../../assets/adote_pet.jpg";
+import BannerDog from "../../../assets/dog_content.jpg";
+import BannerDogFunny from "../../../assets/dog_banner_rounded.jpg";
 
 const Card = () => {
 

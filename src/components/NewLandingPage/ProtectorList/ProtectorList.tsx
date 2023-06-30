@@ -76,11 +76,11 @@ const ProtectorList = () => {
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Bruce</td>
-                                    <td>Wayne</td>
-                                    <td>wayne@wayne.com</td>
-                                    <td>Santa Terezinha de Itaipu</td>
-                                    <td>Paraná</td>
+                                    <td>Peter</td>
+                                    <td>Parker</td>
+                                    <td>peter@times.com</td>
+                                    <td>São Paulo</td>
+                                    <td>São Paulo</td>
                                     <td>
                                         <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
                                         <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>

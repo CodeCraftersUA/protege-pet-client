@@ -18,6 +18,10 @@ nav li {
     margin: auto 9px auto 9px;
 }
 
+ul li a {
+    text-decoration: none;
+}
+
 .zoom {
     transition: .2s;
 }
