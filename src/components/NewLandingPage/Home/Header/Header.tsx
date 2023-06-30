@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./Header.styles.css";
 import PetLogo from "../../../../assets/pet_logo.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -35,7 +36,7 @@ const Header = () => {
                                     <a className="nav-link">Blog</a>
                                 </li>
                                 <li className="nav-item zoom">
-                                    <a className="nav-link btn btn-outline rounded-1 border border-1 px-2 active">Entrar</a>
+                                    <Link to="/login"><a className="nav-link btn btn-outline rounded-1 border border-1 px-2 active">Entrar</a></Link>
                                 </li>
                             </ul>
                         </div>

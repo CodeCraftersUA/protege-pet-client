@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 
 import App from './App.tsx'
+import NewLogin from "./Pages/NewLoginPage/index.tsx";
 import UserLogin from './Pages/UserLogin/index.tsx'
 import ProtectorRegisterPage from './Pages/ProtectorRegister/index.tsx'
 import SupplierRegisterPage from './Pages/SupplierRegister/index.tsx'
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <UserLogin/>
+    element: <NewLogin/>
   },
   {
     path: "/register_protector",
