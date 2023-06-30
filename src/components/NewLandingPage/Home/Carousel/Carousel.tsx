@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./Carousel.styles.css"
-import BannerAssociado from "../../../assets/banner_associado.png"
-import BannerAdote from "../../../assets/banner_adote_pet.png"
+import BannerAssociado from "../../../../assets/banner_associado.png"
+import BannerAdote from "../../../../assets/banner_adote_pet.png"
 
 const Carousel = () => {
 

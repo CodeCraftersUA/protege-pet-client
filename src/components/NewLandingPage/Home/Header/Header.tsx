@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./Header.styles.css";
-import PetLogo from "../../../assets/pet_logo.svg";
+import PetLogo from "../../../../assets/pet_logo.svg";
 import { Link } from "react-router-dom";
 
 const Header = () => {

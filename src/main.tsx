@@ -7,13 +7,10 @@ import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 import App from './App.tsx'
 import NewLogin from "./Pages/NewLoginPage/index.tsx";
-import UserLogin from './Pages/UserLogin/index.tsx'
 import ProtectorRegisterPage from './Pages/ProtectorRegister/index.tsx'
 import SupplierRegisterPage from './Pages/SupplierRegister/index.tsx'
 import UsersRegisterPage from './Pages/UsersRegister/index.tsx'
-import CommonUserRegisterPage from './Pages/CommonUserRegister/index.tsx'
-import UsersListPage from './Pages/UsersList/index.tsx'
-import AnimalsListPage from './Pages/AnimalListPage/index.tsx'
+import NewRegisterPage from './Pages/NewRegisterPage/index.tsx'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <NewLogin/>
+  },
+  {
+    path: "/register",
+    element: <NewRegisterPage />
   },
   {
     path: "/register_protector",
@@ -36,18 +37,6 @@ const router = createBrowserRouter([
     path: "/register_users",
     element: <UsersRegisterPage/>
   },
-  {
-    path: "/register_common_user",
-    element: <CommonUserRegisterPage/>
-  },
-  {
-    path: "/users_list",
-    element: <UsersListPage/>
-  },
-  {
-    path: "/animals_list",
-    element: <AnimalsListPage/>
-  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

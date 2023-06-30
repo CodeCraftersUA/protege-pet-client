@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./Content.styles.css";
-import Dog from "../../../assets/dog-content.png";
+import Dog from "../../../../assets/dog-content.png";
 import Card from "../Card/Card";
 import MapFrame from "../MapFrame/MapFrame";
 import Partner from "../Partner/Partner";

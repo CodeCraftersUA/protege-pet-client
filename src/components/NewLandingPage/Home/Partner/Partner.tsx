@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./Partner.styles.css";
-import UALogo from "../../../assets/uniamerica_logo.jpg";
-import MicrosoftLogo from "../../../assets/microsoft.jpg";
-import GitHubLogo from "../../../assets/github.jpg";
+import UALogo from "../../../../assets/uniamerica_logo.jpg";
+import MicrosoftLogo from "../../../../assets/microsoft.jpg";
+import GitHubLogo from "../../../../assets/github.jpg";
 
 const Partner = () => {
 
