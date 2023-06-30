@@ -1,11 +1,11 @@
-import Associate from "../../components/AnimalsList";
+import AssociateList from "../../components/NewLandingPage/AssociateList/AssociateList";
 
-const NewAssociatePage = () => {
+const NewAssociateListPage = () => {
     return (
         <>
-           <Associate />
+           <AssociateList />
         </>
     );
 };
 
-export default NewAssociatePage;
+export default NewAssociateListPage;
