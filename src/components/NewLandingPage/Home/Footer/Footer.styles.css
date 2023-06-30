@@ -22,7 +22,7 @@ h4, h5, p {
 
 .zoom:hover {
     transform: scale(1.06);
-    text-shadow: .9px .9px #a18117;
+    /*text-shadow: .9px .9px #a18117;*/
 }
 
 hr {
@@ -35,7 +35,17 @@ p.titlePet {
 }
 
 .cardImageSize {
-    width: 349px;
-    height: 287px;
+    width: 350px;
+    height: 207px;
     object-fit: cover;
+}
+
+span.heartFooter {
+    color: #FFC60F !important;
+}
+
+.imageSizeFooter {
+    width: 29px;
+    height: 29px;
+    object-fit: contain;
 }

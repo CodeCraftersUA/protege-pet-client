@@ -22,7 +22,7 @@ h4, h5, p {
 
 .zoom:hover {
     transform: scale(1.06);
-    text-shadow: .9px .9px #a18117;
+    /*text-shadow: .9px .9px #a18117;*/
 }
 
 hr {

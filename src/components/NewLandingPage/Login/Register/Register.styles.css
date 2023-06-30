@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+h4, h5, p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 399;
+}
+
+.imageSize {
+    width: 169px;
+    height: 169px;
+    object-fit: cover;
+}
+
+body,.backgroundImage {
+    background-color: #ffc70f1e;
+    /*opacity: 0.8;*/
+}
+
+.zoom {
+    transition: .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.06);
+    /*text-shadow: .9px .9px #a18117;*/
+}
+
+hr {
+    color: #a18117;
+}
+
+p.titlePet {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 90;
+}
+
+.cardImageSize {
+    width: 350px;
+    height: 207px;
+    object-fit: cover;
+}

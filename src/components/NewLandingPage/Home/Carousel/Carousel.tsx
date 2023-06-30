@@ -1,15 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import "./index.module.css"
-import BannerAssociado from "../../../assets/banner_associado.png"
-import BannerAdote from "../../../assets/banner_adote_pet.png"
+import "./Carousel.styles.css"
+import BannerAssociado from "../../../../assets/banner_associado.png"
+import BannerAdote from "../../../../assets/banner_adote_pet.png"
 
 const Carousel = () => {
 
     return (
         <>
             <div className="justify-content-center">
-                <div className="mt-5 pt-3">
+                <div className="mt-5 pt-2">
                     <div id="carouselExample" className="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             <div className="carousel-item active carouselImageSize">
