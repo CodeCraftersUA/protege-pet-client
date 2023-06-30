@@ -11,6 +11,10 @@ import ProtectorRegisterPage from './Pages/ProtectorRegister/index.tsx'
 import SupplierRegisterPage from './Pages/SupplierRegister/index.tsx'
 import UsersRegisterPage from './Pages/UsersRegister/index.tsx'
 import NewRegisterPage from './Pages/NewRegisterPage/index.tsx'
+import NewAnimalListPage from './Pages/NewAnimalListPage/index.tsx'
+import NewAssociateListPage from './Pages/NewAssociateList/index.tsx'
+import NewProtectorListPage from './Pages/NewProtectorList/index.tsx'
+import NewSupplierListPage from './Pages/NewSupplierListPage/index.tsx'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +28,22 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <NewRegisterPage />
+  },
+  {
+    path: "/animals",
+    element: <NewAnimalListPage />
+  },
+  {
+    path: "/associates",
+    element: <NewAssociateListPage />
+  },
+  {
+    path: "/protectors",
+    element: <NewProtectorListPage />
+  },
+  {
+    path: "/suppliers",
+    element: <NewSupplierListPage />
   },
   {
     path: "/register_protector",

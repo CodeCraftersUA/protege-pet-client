@@ -1,4 +1,4 @@
-import ProtectorList from "../../components/NewLandingPage/ProtectorList/ProtectorList";
+import ProtectorList from "../../components/ProtectorList/ProtectorList";
 
 const NewProtectorListPage = () => {
     return (

@@ -1,4 +1,4 @@
-import SupplierList from "../../components/NewLandingPage/SupplierList/SupplierList";
+import SupplierList from "../../components/SupplierList/SupplierList";
 
 const NewSupplierListPage = () => {
     return (

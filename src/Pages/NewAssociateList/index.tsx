@@ -1,4 +1,4 @@
-import AssociateList from "../../components/NewLandingPage/AssociateList/AssociateList";
+import AssociateList from "../../components/AssociateList/AssociateList";
 
 const NewAssociateListPage = () => {
     return (
