@@ -2,8 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
 import  "./SideBar.styles.css";
-import PetLogo from "../../assets/pet_logo.svg";
-import Vader from "../../assets/vader.jpg";
+import PetLogo from "../../../assets/pet_logo.svg";
+import Vader from "../../../assets/vader.jpg";
 
 const SideBar = () => {
     return (

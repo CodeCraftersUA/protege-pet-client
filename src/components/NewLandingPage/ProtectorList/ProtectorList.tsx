@@ -5,25 +5,30 @@ import IgnoreIcon from "bootstrap-icons/icons/x-lg.svg";
 import "./ProtectorList.styles.css";
 import SideBar from "../SideBar/SideBar";
 
+import NewProtectorModal from "./NewProtectorModal/NewProtectorModal";
+import EditProtectorModal from "./EditProtectorModal/EditProtectorModal";
+
 const ProtectorList = () => {
 
     return (
         <>  
-            
             <div className="container-fluid">
                 <div className="row flex-nowrap">
                     <SideBar />
                     <div className="col py-0 px-0">
                         <article className="container-fluid px-0">
+                            
                             <div className="container-lg px-0">
+                                
                                     <nav className="navbar navbar-expand-lg">
+                                        
                                         <div className="container-md">
                                                 <ul className="navbar-nav mb-2 mb-lg-0 headerList nav">
                                                     <li className="nav-item zoom">
-                                                        <a className="nav-link" aria-current="page" href="#">Novo</a>
+                                                        <a className="nav-link " aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#newProtectorModal">Novo</a>
                                                     </li>
                                                     <li className="nav-item zoom">
-                                                        <a className="nav-link" href="#">Editar</a>
+                                                        <a className="nav-link " aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#editProtectorModal">Editar</a>
                                                     </li>
                                                     <li className="nav-item zoom">
                                                         <a className="nav-link" href="#">Deletar</a>
@@ -32,7 +37,7 @@ const ProtectorList = () => {
                                         </div>
                                     </nav>
                             </div>
-
+                
                             <table className="table table-striped table-hover">
                                 <tr>
                                     <th>ID</th>
@@ -83,6 +88,10 @@ const ProtectorList = () => {
                                 </tr>
                             </table>
                         </article>
+                        <div className="col py-0 px-0">
+                            <NewProtectorModal />
+                            <EditProtectorModal />
+                        </div>
                     </div>
                 </div>
             </div>

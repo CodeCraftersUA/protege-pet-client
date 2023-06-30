@@ -21,7 +21,7 @@ const Header = () => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 header nav">
                                 <li className="nav-item zoom">
-                                    <a className="nav-link" aria-current="page" href="#">Início</a>
+                                    <Link to="/"><a className="nav-link" aria-current="page" href="#">Início</a></Link>
                                 </li>
                                 <li className="nav-item zoom">
                                     <a className="nav-link" href="#">Adoção</a>
