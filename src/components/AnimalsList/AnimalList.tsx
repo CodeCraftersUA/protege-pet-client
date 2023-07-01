@@ -8,7 +8,40 @@ import SideBar from "../SideBar/SideBar";
 import NewAnimalModal from "./NewAnimalModal/NewAnimalModal";
 import EditAnimalModal from "./EditAnimalModal/EditAnimalModal";
 
+import Axios from "axios";
+import { useEffect, useState } from "react";
+
 const AnimalList = () => {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        Axios.get('http://localhost:3000/animals')
+            .then(res => {
+                console.log('Getting from :::', res.data)
+                setData(res.data)
+            }).catch(err => console.log(err));
+    }, []);
+
+    const arr = data.map((data, index) => {
+        
+        return (
+            <>
+                <tr>
+                    <td>{data.id}</td>
+                    <td>{data.name}</td>
+                    <td>{data.gender}</td>
+                    <td>{data.specie}</td>
+                    <td></td>
+                    <td>{data.description}</td>
+                    <td></td>
+                    <td>
+                        <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
+                        <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>
+                    </td>
+                </tr>
+            </>
+        );
+    });
 
     return (
         <>  
@@ -39,42 +72,21 @@ const AnimalList = () => {
                             </div>
                 
                             <table className="table table-striped table-hover">
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Nome</th>
-                                    <th>Gênero</th>
-                                    <th>Espécie</th>
-                                    <th>Doença</th>
-                                    <th>Descrição</th>
-                                    <th>Protetor</th>
-                                    <th>Ação</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Tony</td>
-                                    <td>Macho</td>
-                                    <td>Pastor Alemão</td>
-                                    <td>Eplepsia</td>
-                                    <td>Encontrado com a pata machucada, bem de modo geral.</td>
-                                    <td>Batman</td>
-                                    <td>
-                                        <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
-                                        <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Joker</td>
-                                    <td>Macho</td>
-                                    <td>Pinscher</td>
-                                    <td>Nenhuma</td>
-                                    <td>Extremista e violento.</td>
-                                    <td>Rorschach</td>
-                                    <td>
-                                        <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
-                                        <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>
-                                    </td>
-                                </tr>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nome</th>
+                                        <th>Gênero</th>
+                                        <th>Espécie</th>
+                                        <th>Doença</th>
+                                        <th>Descrição</th>
+                                        <th>Protetor</th>
+                                        <th>Ação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {arr}
+                                </tbody>
                             </table>
                         </article>
                         <div className="col py-0 px-0">

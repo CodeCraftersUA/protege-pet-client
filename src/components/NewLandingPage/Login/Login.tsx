@@ -7,8 +7,8 @@ import Footer from "./Footer/Footer";
 import { useEffect, useRef, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 
-import AuthContex from '../../../contexts/Auth/AuthProvider.jsx';
-import {AuthProvider} from '../../../contexts/Auth/AuthProvide.jsx';
+import AuthContex from '../../../contexts/Auth/AuthProvider';
+import {AuthProvider} from '../../../contexts/Auth/AuthProvide';
 
 import Axios from "axios";
 

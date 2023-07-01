@@ -12,17 +12,18 @@ import Axios from "axios";
 import { useEffect, useState } from "react";
 
 const ProtectorList = () => {
-    const [data, setDate] = useState([]);
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         Axios.get('http://localhost:3000/admin/accounts')
             .then(res => {
                 console.log('Getting from :::', res.data)
-                setDate(res.data)
+                setData(res.data)
             }).catch(err => console.log(err));
     }, []);
 
     const arr = data.map((data, index) => {
+
         return (
             <>
                 <tr>
@@ -39,8 +40,8 @@ const ProtectorList = () => {
                     </td>
                 </tr>
             </>
-        )
-    })
+        );
+    });
 
     return (
         <>  
@@ -71,16 +72,20 @@ const ProtectorList = () => {
                             </div>
                 
                             <table className="table table-striped table-hover">
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Nome</th>
-                                    <th>Sobrenome</th>
-                                    <th>E-mail</th>
-                                    <th>Celular</th>
-                                    <th>CPF/CNPJ</th>
-                                    <th>Ação</th>
-                                </tr>
-                                {arr}
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nome</th>
+                                        <th>Sobrenome</th>
+                                        <th>E-mail</th>
+                                        <th>Celular</th>
+                                        <th>CPF/CNPJ</th>
+                                        <th>Ação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {arr}
+                                </tbody>
                             </table>
                         </article>
                         <div className="col py-0 px-0">
