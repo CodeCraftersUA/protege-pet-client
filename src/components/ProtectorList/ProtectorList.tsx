@@ -8,7 +8,39 @@ import SideBar from "../SideBar/SideBar";
 import NewProtectorModal from "./NewProtectorModal/NewProtectorModal";
 import EditProtectorModal from "./EditProtectorModal/EditProtectorModal";
 
+import Axios from "axios";
+import { useEffect, useState } from "react";
+
 const ProtectorList = () => {
+    const [data, setDate] = useState([]);
+
+    useEffect(() => {
+        Axios.get('http://localhost:3000/admin/accounts')
+            .then(res => {
+                console.log('Getting from :::', res.data)
+                setDate(res.data)
+            }).catch(err => console.log(err));
+    }, []);
+
+    const arr = data.map((data, index) => {
+        return (
+            <>
+                <tr>
+                    <td>{data.id}</td>
+                    <td>{data.name}</td>
+                    <td></td>
+                    <td>{data.email}</td>
+                    <td></td>
+                    <td>{data.cnpj}</td>
+                    <td>{data.type}</td>
+                    <td>
+                        <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
+                        <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>
+                    </td>
+                </tr>
+            </>
+        )
+    })
 
     return (
         <>  
@@ -48,45 +80,7 @@ const ProtectorList = () => {
                                     <th>CPF/CNPJ</th>
                                     <th>Ação</th>
                                 </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Tony</td>
-                                    <td>Stark</td>
-                                    <td>stark@stark.com</td>
-                                    <td>4599999-6666</td>
-                                    <td>333.666.999-00</td>
-                                    <td>PROTECTOR</td>
-                                    <td>
-                                        <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
-                                        <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Bruce</td>
-                                    <td>Wayne</td>
-                                    <td>wayne@wayne.com</td>
-                                    <td>4133333-9999</td>
-                                    <td>000.111.222-00</td>
-                                    <td>ASSOCIATE</td>
-                                    <td>
-                                        <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
-                                        <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Peter</td>
-                                    <td>Parker</td>
-                                    <td>parker@miranha.com</td>
-                                    <td>6677777-1111</td>
-                                    <td>012.345.678-91</td>
-                                    <td>PROTECTOR</td>
-                                    <td>
-                                        <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
-                                        <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>
-                                    </td>
-                                </tr>
+                                {arr}
                             </table>
                         </article>
                         <div className="col py-0 px-0">

@@ -3,7 +3,7 @@ import Login from "../../components/NewLandingPage/Login/Login";
 const NewLoginPage = () => {
     return (
         <>
-           <Login />
+            <Login />
         </>
     );
 };

@@ -16,9 +16,7 @@ const SideBar = () => {
                     </a>
                     <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         <li className="nav-item">
-                            <a href="#" className="nav-link align-middle px-0 zoom">
-                                <i className="bi bi-home"></i><p className="ms-1 d-none d-sm-inline text-white">Inicio</p>
-                            </a>
+                            <Link to="/dashboard"><a href="#" className="nav-link align-middle px-0 zoom"><p className="ms-1 d-none d-sm-inline text-white">Inicio</p></a></Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/animals"><a href="" className="nav-link align-middle px-0 zoom"><p className="ms-1 d-none d-sm-inline text-white">Animais</p></a></Link>
