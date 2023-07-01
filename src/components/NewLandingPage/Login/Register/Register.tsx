@@ -10,10 +10,10 @@ const Register = () => {
 
     const [data, setDate] = useState([]);
     const [name, setName] = useState('');
-    const [userType, setUserType] = useState('');
+    const [type, setType] = useState('');
     const [email, setEmail] = useState('');
-    const [passAccount, setPassAccount] = useState('');
-    const [cpfCNPJ, setCpfCnpj] = useState('');
+    const [password, setPassword] = useState('');
+    const [cnpj, setCnpj] = useState('');
 
     useEffect(() => {
         Axios.get('http://localhost:3000').then(res => {
@@ -25,7 +25,7 @@ const Register = () => {
     const postData = (e: React.ChangeEvent<HTMLInputElement>) => {
         e.preventDefault();
         Axios.post('http://localhost:3000/account', {
-            name, userType, email, passAccount, cpfCNPJ
+            name, type, email, password, cnpj
         }).then(res => console.log('Posting data', res)).catch(err => console.log(err));
     }
 
@@ -50,8 +50,8 @@ const Register = () => {
                                         name="userType" 
                                         value="PROTECTOR" 
                                         id="checkProtector"
-                                        checked={userType === "PROTECTOR"}
-                                        onChange={(e) => setUserType(e.target.value)} />
+                                        checked={type === "PROTECTOR"}
+                                        onChange={(e) => setType(e.target.value)} />
                                     <label className="form-check-label"> Protetor</label>
                                 </div>
                                 <div className="form-check pe-2">
@@ -60,8 +60,8 @@ const Register = () => {
                                         name="userType" 
                                         value="ASSOCIATE" 
                                         id="checkAssociate"
-                                        checked={userType === "ASSOCIATE"}
-                                        onChange={(e) => setUserType(e.target.value)} />
+                                        checked={type === "ASSOCIATE"}
+                                        onChange={(e) => setType(e.target.value)} />
                                     <label className="form-check-label"> Associado</label>
                                 </div>
                                 <div className="form-check pe-2">
@@ -70,8 +70,8 @@ const Register = () => {
                                         name="userType" 
                                         value="SUPPLIER" 
                                         id="checkSupplier"
-                                        checked={userType === "SUPPLIER"}
-                                        onChange={(e) => setUserType(e.target.value)} />
+                                        checked={type === "SUPPLIER"}
+                                        onChange={(e) => setType(e.target.value)} />
                                     <label className="form-check-label"> Fornecedor</label>
                                 </div>
                             </div>
@@ -104,8 +104,8 @@ const Register = () => {
                                 id="cpfCNPJRegister" 
                                 placeholder="CNPF/CNPJ" 
                                 className="form-control border border-1 border-warning shadow-none pe-4 me-0" 
-                                value={cpfCNPJ} 
-                                onChange={(e) => setCpfCnpj(e.target.value)} />
+                                value={cnpj} 
+                                onChange={(e) => setCnpj(e.target.value)} />
                             <select className="form-select form-select-sm border border-1 border-warning shadow-none ms-1" aria-label=".form-select-sm example">
                                 <option selected>Gênero</option>
                                 <option value="feminino">Feminino</option>
@@ -119,8 +119,8 @@ const Register = () => {
                                 id="passwordRegister" 
                                 placeholder="Senha" 
                                 className="form-control border border-1 border-warning shadow-none me-1"
-                                value={passAccount}
-                                onChange={(e) => setPassAccount(e.target.value)} />
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)} />
                             <input type="password" id="confirmPasswordRegister" placeholder="Repita a senha" className="form-control border border-1 border-warning shadow-none" />
                         </div>
 
