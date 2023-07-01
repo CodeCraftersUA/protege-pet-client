@@ -41,17 +41,19 @@ const SupplierList = () => {
                                 <tr>
                                     <th>ID</th>
                                     <th>Nome</th>
-                                    <th>Sobrenome</th>
                                     <th>E-mail</th>
+                                    <th>Telefone</th>
+                                    <th>CPF/CNPJ</th>
                                     <th>Município</th>
                                     <th>Estado</th>
                                     <th>Ação</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>Faculdade</td>
-                                    <td>Uniamérica</td>
+                                    <td>Faculdade Uniamérica</td>
                                     <td>contato@uniamerica.com</td>
+                                    <td>4599999-0000</td>
+                                    <td>00.222.333/0001-00</td>
                                     <td>Foz do Iguaçu</td>
                                     <td>Paraná</td>
                                     <td>
@@ -62,8 +64,9 @@ const SupplierList = () => {
                                 <tr>
                                     <td>2</td>
                                     <td>Microsoft</td>
-                                    <td>Hub</td>
                                     <td>contato@microsoft.com</td>
+                                    <td>411111-3322</td>
+                                    <td>000.111.222-33</td>
                                     <td>Santa Terezinha de Itaipu</td>
                                     <td>Paraná</td>
                                     <td>
@@ -76,8 +79,9 @@ const SupplierList = () => {
                                 <tr>
                                     <td>3</td>
                                     <td>Git</td>
-                                    <td>Hub</td>
                                     <td>contato@github.com</td>
+                                    <td>4566666-0000</td>
+                                    <td>00.222.333/6661-99</td>
                                     <td>Santa Terezinha de Itaipu</td>
                                     <td>Paraná</td>
                                     <td>

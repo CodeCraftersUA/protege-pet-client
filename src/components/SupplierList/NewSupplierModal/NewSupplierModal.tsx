@@ -11,7 +11,7 @@ const NewSupplierModal = () => {
                     <div className="modal-dialog">
                         <div className="modal-content">
                         <div className="modal-header">
-                            <h1 className="modal-title fs-5" id="staticBackdropLabel">Novo Protetor</h1>
+                            <h1 className="modal-title fs-5" id="staticBackdropLabel">Novo Parceiro</h1>
                             <button type="button" className="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
@@ -19,19 +19,17 @@ const NewSupplierModal = () => {
                         <section className="container-md my-2 text-center col-12">
                             <form className="container-md">
                                 <div className="form-outline my-0 mb-3 col d-flex">
-                                    <input type="text" id="firstNameRegister" placeholder="Nome" className="form-control border border-1 border-warning shadow-none me-1" />
-                                    <input type="text" id="lastNameRegister" placeholder="Sobrenome" className="form-control border border-1 border-warning shadow-none" />
+                                    <input type="text" id="nameSupplierameRegister" placeholder="Nome" className="form-control border border-1 border-warning shadow-none me-0" /></div>
+                                <div className="form-outline my-0 mb-3 col d-flex">
+                                    <input type="email" id="emaiSupplierRegister" placeholder="E-mail" className="form-control border border-1 border-warning shadow-none me-1" />
+                                    <input type="text" id="phoneSupplierRegister" placeholder="Telefone" className="form-control border border-1 border-warning shadow-none" />
                                 </div>
                                 <div className="form-outline my-0 mb-3 col d-flex">
-                                    <input type="email" id="emailRegister" placeholder="E-mail" className="form-control border border-1 border-warning shadow-none me-1" />
-                                    <input type="text" id="phoneRegister" placeholder="Celular" className="form-control border border-1 border-warning shadow-none" />
+                                    <input type="text" id="cpfCNPJSupplierRegister" placeholder="CPF/CNPJ" className="form-control border border-1 border-warning shadow-none me-0" />
                                 </div>
                                 <div className="form-outline my-0 mb-3 col d-flex">
-                                    <input type="text" id="cpfCNPJRegister" placeholder="CPF/CNPJ" className="form-control border border-1 border-warning shadow-none me-0" />
-                                </div>
-                                <div className="form-outline my-0 mb-3 col d-flex">
-                                    <input type="password" id="passwordRegister" placeholder="Senha" className="form-control border border-1 border-warning shadow-none me-1" />
-                                    <input type="password" id="confirmPasswordRegister" placeholder="Repita a senha" className="form-control border border-1 border-warning shadow-none" />
+                                    <input type="text" id="citySupplierRegister" placeholder="Cidade" className="form-control border border-1 border-warning shadow-none me-1" />
+                                    <input type="text" id="stateSupplierRegister" placeholder="Estado" className="form-control border border-1 border-warning shadow-none" />
                                 </div>
                             </form>
                         </section>

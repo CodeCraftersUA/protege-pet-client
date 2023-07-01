@@ -42,19 +42,21 @@ const AnimalList = () => {
                                 <tr>
                                     <th>ID</th>
                                     <th>Nome</th>
-                                    <th>Espécie</th>
                                     <th>Gênero</th>
+                                    <th>Espécie</th>
                                     <th>Doença</th>
+                                    <th>Descrição</th>
                                     <th>Protetor</th>
                                     <th>Ação</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
                                     <td>Tony</td>
-                                    <td>Pastor Alemão</td>
                                     <td>Macho</td>
+                                    <td>Pastor Alemão</td>
                                     <td>Eplepsia</td>
-                                    <td>Maria</td>
+                                    <td>Encontrado com a pata machucada, bem de modo geral.</td>
+                                    <td>Batman</td>
                                     <td>
                                         <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
                                         <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>
@@ -62,11 +64,12 @@ const AnimalList = () => {
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Bruce</td>
-                                    <td>Vira Lata</td>
+                                    <td>Joker</td>
                                     <td>Macho</td>
-                                    <td>Insonia</td>
-                                    <td>João</td>
+                                    <td>Pinscher</td>
+                                    <td>Nenhuma</td>
+                                    <td>Extremista e violento.</td>
+                                    <td>Rorschach</td>
                                     <td>
                                         <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
                                         <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>

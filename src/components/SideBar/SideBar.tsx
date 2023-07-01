@@ -21,9 +21,7 @@ const SideBar = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="" className="nav-link align-middle px-0 zoom">
-                                <i className="bi bi-home"></i><p className="ms-1 d-none d-sm-inline text-white">Animais</p>
-                            </a>
+                            <Link to="/animals"><a href="" className="nav-link align-middle px-0 zoom"><p className="ms-1 d-none d-sm-inline text-white">Animais</p></a></Link>
                         </li>
                         <li>
                             <a href="#submenu1" data-bs-toggle="collapse" className="nav-link px-0 align-middle zoom">

@@ -19,19 +19,26 @@ const EditAnimalModal = () => {
                         <section className="container-md my-2 text-center col-12">
                             <form className="container-md">
                                 <div className="form-outline my-0 mb-3 col d-flex">
-                                    <input type="text" id="firstNameRegister" placeholder="Nome" className="form-control border border-1 border-warning shadow-none me-1" />
-                                    <input type="text" id="lastNameRegister" placeholder="Sobrenome" className="form-control border border-1 border-warning shadow-none" />
+                                    <input type="text" id="nameAnimalRegister" placeholder="Nome" className="form-control border border-1 border-warning shadow-none me-0" />
+                                    <select name="genre" className="form-select form-select-sm border border-1 border-warning shadow-none ms-3 ps-2" aria-label=".form-select-sm example">
+                                        <option selected>Gênero</option>
+                                        <option value="femea">Fêmea</option>
+                                        <option value="macho">Macho</option>
+                                    </select>
                                 </div>
                                 <div className="form-outline my-0 mb-3 col d-flex">
-                                    <input type="email" id="emailRegister" placeholder="E-mail" className="form-control border border-1 border-warning shadow-none me-1" />
-                                    <input type="text" id="phoneRegister" placeholder="Celular" className="form-control border border-1 border-warning shadow-none" />
+                                    <input type="text" id="specieAnimalRegister" placeholder="Espécie" className="form-control border border-1 border-warning shadow-none me-1" />
+                                    <input type="text" id="sicknessAnimalRegister" placeholder="Doença" className="form-control border border-1 border-warning shadow-none me-0" />
                                 </div>
                                 <div className="form-outline my-0 mb-3 col d-flex">
-                                    <input type="text" id="cpfCNPJRegister" placeholder="CPF/CNPJ" className="form-control border border-1 border-warning shadow-none me-0" />
+                                    <input type="text" id="descriptionAnimalRegister" placeholder="Descrição" className="form-control border border-1 border-warning shadow-none me-0" />
                                 </div>
                                 <div className="form-outline my-0 mb-3 col d-flex">
-                                    <input type="password" id="passwordRegister" placeholder="Senha" className="form-control border border-1 border-warning shadow-none me-1" />
-                                    <input type="password" id="confirmPasswordRegister" placeholder="Repita a senha" className="form-control border border-1 border-warning shadow-none" />
+                                    <select name="protectorName" className="form-select form-select-sm border border-1 border-warning shadow-none ms-0 ps-2" aria-label=".form-select-sm example">
+                                        <option selected>Protetores</option>
+                                        <option value="tony">Tony</option>
+                                        <option value="maria">Maria</option>
+                                    </select>
                                 </div>
                             </form>
                         </section>

@@ -44,8 +44,8 @@ const ProtectorList = () => {
                                     <th>Nome</th>
                                     <th>Sobrenome</th>
                                     <th>E-mail</th>
-                                    <th>Município</th>
-                                    <th>Estado</th>
+                                    <th>Celular</th>
+                                    <th>CPF/CNPJ</th>
                                     <th>Ação</th>
                                 </tr>
                                 <tr>
@@ -53,8 +53,9 @@ const ProtectorList = () => {
                                     <td>Tony</td>
                                     <td>Stark</td>
                                     <td>stark@stark.com</td>
-                                    <td>Foz do Iguaçu</td>
-                                    <td>Paraná</td>
+                                    <td>4599999-6666</td>
+                                    <td>333.666.999-00</td>
+                                    <td>PROTECTOR</td>
                                     <td>
                                         <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
                                         <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>
@@ -65,22 +66,22 @@ const ProtectorList = () => {
                                     <td>Bruce</td>
                                     <td>Wayne</td>
                                     <td>wayne@wayne.com</td>
-                                    <td>Santa Terezinha de Itaipu</td>
-                                    <td>Paraná</td>
+                                    <td>4133333-9999</td>
+                                    <td>000.111.222-00</td>
+                                    <td>ASSOCIATE</td>
                                     <td>
-                                        
                                         <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
                                         <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>
-                                        
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>Peter</td>
                                     <td>Parker</td>
-                                    <td>peter@times.com</td>
-                                    <td>São Paulo</td>
-                                    <td>São Paulo</td>
+                                    <td>parker@miranha.com</td>
+                                    <td>6677777-1111</td>
+                                    <td>012.345.678-91</td>
+                                    <td>PROTECTOR</td>
                                     <td>
                                         <a href="" className="bg-transparent"><img src={CheckIcon} className="zoom" alt="" /></a>
                                         <a href="" className="bg-transparent"><img src={IgnoreIcon} className="zoom" alt="" /></a>

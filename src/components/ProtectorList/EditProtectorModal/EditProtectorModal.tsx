@@ -19,19 +19,37 @@ const EditProtectorModal = () => {
                         <section className="container-md my-2 text-center col-12">
                             <form className="container-md">
                                 <div className="form-outline my-0 mb-3 col d-flex">
-                                    <input type="text" id="firstNameRegister" placeholder="Nome" className="form-control border border-1 border-warning shadow-none me-1" />
-                                    <input type="text" id="lastNameRegister" placeholder="Sobrenome" className="form-control border border-1 border-warning shadow-none" />
+                                    <input type="text" id="firstNameProtectorRegister" placeholder="Nome" className="form-control border border-1 border-warning shadow-none me-1" />
+                                    <input type="text" id="lastNamePRotectorRegister" placeholder="Sobrenome" className="form-control border border-1 border-warning shadow-none" />
                                 </div>
                                 <div className="form-outline my-0 mb-3 col d-flex">
-                                    <input type="email" id="emailRegister" placeholder="E-mail" className="form-control border border-1 border-warning shadow-none me-1" />
-                                    <input type="text" id="phoneRegister" placeholder="Celular" className="form-control border border-1 border-warning shadow-none" />
+                                    <input type="email" id="emailPRotectorRegister" placeholder="E-mail" className="form-control border border-1 border-warning shadow-none me-1" />
+                                    <input type="text" id="phoneProtectorRegister" placeholder="Celular" className="form-control border border-1 border-warning shadow-none" />
                                 </div>
                                 <div className="form-outline my-0 mb-3 col d-flex">
-                                    <input type="text" id="cpfCNPJRegister" placeholder="CPF/CNPJ" className="form-control border border-1 border-warning shadow-none me-0" />
+                                    <input type="text" id="cpfCNPJProtectorRegister" placeholder="CPF/CNPJ" className="form-control border border-1 border-warning shadow-none me-0" />
                                 </div>
                                 <div className="form-outline my-0 mb-3 col d-flex">
-                                    <input type="password" id="passwordRegister" placeholder="Senha" className="form-control border border-1 border-warning shadow-none me-1" />
-                                    <input type="password" id="confirmPasswordRegister" placeholder="Repita a senha" className="form-control border border-1 border-warning shadow-none" />
+                                    <input type="password" id="passwordProtectorRegister" placeholder="Senha" className="form-control border border-1 border-warning shadow-none me-1" />
+                                    <input type="password" id="confirmPasswordPRotectorRegister" placeholder="Repita a senha" className="form-control border border-1 border-warning shadow-none" />
+                                </div>
+
+                                <div className="row mb-4">
+                                    <p>Selecione uma opção: </p>
+                                    <div className="col d-flex justify-content-center">
+                                        <div className="form-check pe-2">
+                                            <input className="form-check-input shadow-none" type="radio" name="userType" value="PROTECTOR" id="checkProtector" />
+                                            <label className="form-check-label"> Protetor</label>
+                                        </div>
+                                        <div className="form-check pe-2">
+                                            <input className="form-check-input shadow-none" type="radio" name="userType" value="ASSOCIATE" id="checkAssociate" />
+                                            <label className="form-check-label"> Associado</label>
+                                        </div>
+                                        <div className="form-check pe-2">
+                                            <input className="form-check-input shadow-none" type="radio" name="userType" value="SUPPLIER" id="checkSupplier" />
+                                            <label className="form-check-label"> Fornecedor</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
                         </section>
