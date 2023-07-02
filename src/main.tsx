@@ -15,7 +15,8 @@ import NewAnimalListPage from './Pages/NewAnimalListPage/index.tsx'
 import NewAssociateListPage from './Pages/NewAssociateList/index.tsx'
 import NewProtectorListPage from './Pages/NewProtectorList/index.tsx'
 import NewSupplierListPage from './Pages/NewSupplierListPage/index.tsx'
-import DashboardPage from './Pages/Dashboard/index.tsx'
+import DashboardPage from './Pages/DashboardPage/index.tsx'
+import OccurrencePage from './Pages/OccurrenceListPage/index.tsx'
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/associates",
     element: <NewAssociateListPage />
+  },
+  {
+    path: "/occurrences",
+    element: <OccurrencePage />
   },
   {
     path: "/protectors",

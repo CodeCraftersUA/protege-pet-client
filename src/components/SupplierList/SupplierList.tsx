@@ -7,6 +7,9 @@ import SideBar from "../SideBar/SideBar";
 import NewSupplierModal from "./NewSupplierModal/NewSupplierModal";
 import EditSupplierModal from "./EditSupplierModal/EditSupplierModal";
 
+import Axios from "axios";
+import { useEffect, useState } from "react";
+
 const SupplierList = () => {
 
     return (

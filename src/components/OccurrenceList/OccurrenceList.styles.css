@@ -30,7 +30,7 @@ td, th {
     padding: 1px;
 }
   
-.titleTable, tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: #ffc70f1e;
 }
 

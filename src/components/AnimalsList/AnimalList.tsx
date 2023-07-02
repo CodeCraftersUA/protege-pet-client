@@ -26,7 +26,7 @@ const AnimalList = () => {
         
         return (
             <>
-                <tr>
+                <tr key={index}>
                     <td>{data.id}</td>
                     <td>{data.name}</td>
                     <td>{data.gender}</td>

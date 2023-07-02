@@ -2,20 +2,20 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import CheckIcon from "bootstrap-icons/icons/check-lg.svg";
 import IgnoreIcon from "bootstrap-icons/icons/x-lg.svg";
-import "./ProtectorList.styles.css";
+import "./OccurrenceList.styles.css";
 import SideBar from "../SideBar/SideBar";
 
-import NewProtectorModal from "./NewProtectorModal/NewProtectorModal";
-import EditProtectorModal from "./EditProtectorModal/EditProtectorModal";
+import NewOccurrenceModal from "./NewOccurrenceModal/NewOccurrenceModal";
+import EditOccurrenceModal from "./EditOccurrenceModal/EditOccurrenceModal";
 
 import Axios from "axios";
 import { useEffect, useState } from "react";
 
-const ProtectorList = () => {
+const OccurrenceList = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        Axios.get('http://localhost:3000/admin/accounts')
+        Axios.get('http://localhost:3000/admin/complaints')
             .then(res => {
                 console.log('Getting from :::', res.data)
                 setData(res.data)
@@ -26,7 +26,7 @@ const ProtectorList = () => {
 
         return (
             <>
-                <tr key={index}>
+                <tr>
                     <td>{data.id}</td>
                     <td>{data.name}</td>
                     <td></td>
@@ -58,10 +58,10 @@ const ProtectorList = () => {
                                         <div className="container-md">
                                                 <ul className="navbar-nav mb-2 mb-lg-0 headerList nav">
                                                     <li className="nav-item zoom">
-                                                        <a className="nav-link " aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#newProtectorModal">Novo</a>
+                                                        <a className="nav-link " aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#newOccurrenceModal">Novo</a>
                                                     </li>
                                                     <li className="nav-item zoom">
-                                                        <a className="nav-link " aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#editProtectorModal">Editar</a>
+                                                        <a className="nav-link " aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#editOccurrenceModal">Editar</a>
                                                     </li>
                                                     <li className="nav-item zoom">
                                                         <a className="nav-link" href="#">Deletar</a>
@@ -89,8 +89,8 @@ const ProtectorList = () => {
                             </table>
                         </article>
                         <div className="col py-0 px-0">
-                            <NewProtectorModal />
-                            <EditProtectorModal />
+                            <NewOccurrenceModal />
+                            <EditOccurrenceModal />
                         </div>
                     </div>
                 </div>
@@ -99,4 +99,4 @@ const ProtectorList = () => {
     );
 };
 
-export default ProtectorList;
+export default OccurrenceList;

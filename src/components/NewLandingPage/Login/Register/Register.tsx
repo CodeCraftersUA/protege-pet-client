@@ -16,7 +16,7 @@ const Register = () => {
     const [cnpj, setCnpj] = useState('');
 
     useEffect(() => {
-        Axios.get('http://localhost:3000').then(res => {
+        Axios.get('http://localhost:3000/animals').then(res => {
             console.log('Getting ::::', res.data)
             setDate(res.data)
         }).catch(err => console.log(err))
