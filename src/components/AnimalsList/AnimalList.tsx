@@ -10,7 +10,6 @@ import EditAnimalModal from "./EditAnimalModal/EditAnimalModal";
 
 import Axios from "axios";
 import { useEffect, useState } from "react";
-import { config } from "process";
 
 const AnimalList = () => {
     const [data, setData] = useState([]);
@@ -34,6 +33,7 @@ const AnimalList = () => {
                 setData(res.data)
             }).catch(err => console.log(err));
     }, []);
+
 
     const arr = data.map((data, index) => {
         
@@ -64,7 +64,7 @@ const AnimalList = () => {
                     <div className="col py-0 px-0">
                         <article className="container-fluid px-0">
                             
-                            <div className="container-lg px-0">
+                            <div className="container-fluid px-0">
                                 
                                     <nav className="navbar navbar-expand-lg">
                                         

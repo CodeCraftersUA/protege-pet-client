@@ -32,16 +32,16 @@ const ProtectorList = () => {
             headers: {"Authorization": `bearer ${acessToken}`}
         })
             .then(res => {
-                console.log('GET ANIMALS SUCCESS', res.data)
+                console.log('GET PROTECTORS SUCCESS', res.data)
                 setData(res.data)
             }).catch(err => console.log(err));
     }, []);
 
-    const arr = data.map((data, index) => {
+    const arr = data.map((data) => {
 
         return (
             <>
-                <tr key={index}>
+                <tr key={data.id}>
                     <td>{data.id}</td>
                     <td>{data.name}</td>
                     <td></td>
@@ -66,7 +66,7 @@ const ProtectorList = () => {
                     <div className="col py-0 px-0">
                         <article className="container-fluid px-0">
                             
-                            <div className="container-lg px-0">
+                            <div className="container-fluid px-0">
                                 
                                     <nav className="navbar navbar-expand-lg">
                                         
@@ -87,7 +87,7 @@ const ProtectorList = () => {
                             </div>
                 
                             <table className="table table-striped table-hover">
-                                <thead>
+                                
                                     <tr>
                                         <th>ID</th>
                                         <th>Nome</th>
@@ -97,10 +97,7 @@ const ProtectorList = () => {
                                         <th>CPF/CNPJ</th>
                                         <th>Ação</th>
                                     </tr>
-                                </thead>
-                                <tbody>
                                     {arr}
-                                </tbody>
                             </table>
                         </article>
                         <div className="col py-0 px-0">
