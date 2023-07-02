@@ -4,7 +4,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 
-
 import App from './App.tsx'
 import NewLogin from "./Pages/NewLoginPage/index.tsx";
 import ProtectorRegisterPage from './Pages/ProtectorRegister/index.tsx'
@@ -71,6 +70,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+      <RouterProvider router={router}/>
   </React.StrictMode>,
 )

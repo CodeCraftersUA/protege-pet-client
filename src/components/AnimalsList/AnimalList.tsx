@@ -10,14 +10,27 @@ import EditAnimalModal from "./EditAnimalModal/EditAnimalModal";
 
 import Axios from "axios";
 import { useEffect, useState } from "react";
+import { config } from "process";
 
 const AnimalList = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
+        const acessToken = localStorage.getItem('token');
+        const email = localStorage.getItem('email');
+        const password = localStorage.getItem('password');
+
+        Axios.post('http://localhost:3000/account/login', 
+            {email, password}
+        ).then(response => {
+            console.log('LOGIN SUCCESS');
+        });
+        //console.log(JSON.stringify(response?.data));
+        //setAuth({email, password});
+
         Axios.get('http://localhost:3000/animals')
             .then(res => {
-                console.log('Getting from :::', res.data)
+                console.log('GET ANIMALS SUCCESS', res.data)
                 setData(res.data)
             }).catch(err => console.log(err));
     }, []);

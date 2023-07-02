@@ -15,9 +15,24 @@ const ProtectorList = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        Axios.get('http://localhost:3000/admin/accounts')
+        const acessToken = localStorage.getItem('token');
+        const email = localStorage.getItem('email');
+        const password = localStorage.getItem('password');
+
+        Axios.post('http://localhost:3000/account/login', 
+            {email, password}
+        ).then(response => {
+            console.log('LOGIN SUCCESS');
+        });
+        //console.log(JSON.stringify(response?.data));
+        //setAuth({email, password});
+        console.log(acessToken);
+
+        Axios.get('http://localhost:3000/admin/accounts', {
+            headers: {"Authorization": `bearer ${acessToken}`}
+        })
             .then(res => {
-                console.log('Getting from :::', res.data)
+                console.log('GET ANIMALS SUCCESS', res.data)
                 setData(res.data)
             }).catch(err => console.log(err));
     }, []);

@@ -1,9 +1,12 @@
 import Dashboard from "../../components/Dashboard/Dashboard";
+import { AuthProvider } from "../../contexts/Auth/AuthProvider.jsx";
 
 const DashboardPage = () => {
     return (
         <>
-            <Dashboard />
+            <AuthProvider>
+                <Dashboard />
+            </AuthProvider>
         </>
     )
 }
