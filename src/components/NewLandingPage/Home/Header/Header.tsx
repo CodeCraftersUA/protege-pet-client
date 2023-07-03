@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./Header.styles.css";
-import AnimalSaveLogo from "../../../../assets/pet_logo.svg";
+import AnimalSaveLogo from "../../../../assets/vectorpaint.svg";
 import AnimalLove from "../../../../assets/love.png";
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,7 @@ const Header = () => {
                 <nav className="navbar fixed-top navbar-expand-lg">
                     <div className="container-md">
                         <a href="#" className="navbar-brand">
-                            <img src={AnimalSaveLogo} alt="Logo" width="39" height="39" className="d-inline-block align-text-top " />
+                            <img src={AnimalSaveLogo} alt="Logo" width="43" height="39" className="d-inline-block align-text-top " />
                             Animal Save
                         </a>
                         <button className="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

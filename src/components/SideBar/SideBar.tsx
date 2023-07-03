@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
 import  "./SideBar.styles.css";
+import AnimalSaveLogo from "../../assets/vectorpaint-sidebar.svg";
 import PetLogo from "../../assets/pet_logo.svg";
 import Vader from "../../assets/vader.jpg";
 import { Link } from "react-router-dom";
@@ -12,7 +13,7 @@ const SideBar = () => {
             <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
                 <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                     <a href="/" className="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <img src={PetLogo} alt="" className="pe-3"/><h4 className="fs-5 d-none d-sm-inline">AnimalSave</h4>
+                        <img src={AnimalSaveLogo} width="45" height="26" alt="" className="pe-3"/><h4 className="fs-5 d-none d-sm-inline">AnimalSave</h4>
                     </a>
                     <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         <li className="nav-item">
