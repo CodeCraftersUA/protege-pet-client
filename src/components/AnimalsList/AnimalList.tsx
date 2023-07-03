@@ -35,7 +35,7 @@ const AnimalList = () => {
     }, []);
 
     const dataKeys = Object.keys(data);
-    const arr = dataKeys.map((data, index) => {
+    const arr = dataKeys.map((data, index) => { 
         
         return (
             <>

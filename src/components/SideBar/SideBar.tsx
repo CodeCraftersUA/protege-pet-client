@@ -3,7 +3,6 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 import  "./SideBar.styles.css";
 import AnimalSaveLogo from "../../assets/vectorpaint-sidebar.svg";
-import PetLogo from "../../assets/pet_logo.svg";
 import Vader from "../../assets/vader.jpg";
 import { Link } from "react-router-dom";
 
