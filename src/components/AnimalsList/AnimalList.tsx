@@ -34,8 +34,8 @@ const AnimalList = () => {
             }).catch(err => console.log(err));
     }, []);
 
-
-    const arr = data.map((data, index) => {
+    const dataKeys = Object.keys(data);
+    const arr = dataKeys.map((data, index) => {
         
         return (
             <>

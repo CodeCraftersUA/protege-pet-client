@@ -33,6 +33,9 @@ const Login = () => {
             console.log(JSON.stringify(response?.data));
             //setAuth({email, password});
 
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
+
             setEmail('');
             setPassword('');
             routeChange();
