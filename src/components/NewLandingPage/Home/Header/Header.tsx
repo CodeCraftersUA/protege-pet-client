@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./Header.styles.css";
 import AnimalSaveLogo from "../../../../assets/pet_logo.svg";
+import AnimalLove from "../../../../assets/love.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -11,7 +12,7 @@ const Header = () => {
             <header className="justify-content-center">
                 <nav className="navbar fixed-top navbar-expand-lg">
                     <div className="container-md">
-                        <a className="navbar-brand">
+                        <a href="#" className="navbar-brand">
                             <img src={AnimalSaveLogo} alt="Logo" width="39" height="39" className="d-inline-block align-text-top " />
                             Animal Save
                         </a>
@@ -33,13 +34,19 @@ const Header = () => {
                                     <a className="nav-link" href="#">Eventos</a>
                                 </li>
                                 <li className="nav-item zoom">
-                                    <a className="nav-link">Blog</a>
+                                    <a href="#" className="nav-link">Blog</a>
                                 </li>
                                 <li className="nav-item zoom">
                                     <Link to={"/login"}><a className="nav-link btn btn-outline rounded-1 border border-1 px-2 active">Entrar</a></Link>
                                 </li>
                                 <li className="nav-item zoom">
                                     <Link to="/register"><a className="nav-link">Cadastrar</a></Link>
+                                </li>
+                                <li className="nav-item zoom">
+                                   <Link to="/occurrence_page"><a href="#" className="nav-link active">
+                                        <img src={AnimalLove} alt="Logo" width="19" height="19" className="d-inline-block align-text-top" />
+                                         Help me
+                                    </a></Link>
                                 </li>
                             </ul>
                         </div>
