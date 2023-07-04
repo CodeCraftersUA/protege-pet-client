@@ -19,7 +19,7 @@ const AnimalList = () => {
         const email = localStorage.getItem('email');
         const password = localStorage.getItem('password');
 
-        Axios.post('http://localhost:3000/account/login', 
+        Axios.post('http://localhost:3000/accounts/login', 
             {email, password}
         ).then(response => {
             console.log('LOGIN SUCCESS');

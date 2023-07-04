@@ -10,7 +10,7 @@ import { useContext, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const LOGIN_URL = 'http://localhost:3000/account/login';
+const LOGIN_URL = 'http://localhost:3000/accounts/login';
 
 const Login = () => {
 

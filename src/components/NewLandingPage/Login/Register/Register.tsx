@@ -24,7 +24,7 @@ const Register = () => {
 
     const postData = (e: React.ChangeEvent<HTMLInputElement>) => {
         e.preventDefault();
-        Axios.post('http://localhost:3000/account', {
+        Axios.post('http://localhost:3000/accounts', {
             name, type, email, password, cnpj
         }).then(res => console.log('Posting data', res)).catch(err => console.log(err));
     }
